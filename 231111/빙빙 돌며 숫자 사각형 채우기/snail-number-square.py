@@ -7,7 +7,7 @@ dys = [1, 0, -1, 0]
 x, y = 0, 0
 dir_num = 0
 
-answer = [[0] * m for _ in range(n)]
+answer = [[0] * n for _ in range(m)]
 answer[0][0] = 1
 
 def in_range(x, y):
@@ -23,5 +23,5 @@ for i in range(2, n*m + 1):
 
 for i in range(n):
     for j in range(m):
-        print(answer[i][j], end=' ')
+        print(answer[j][i], end=' ')
     print()
