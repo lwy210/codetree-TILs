@@ -17,7 +17,7 @@ for c in command:
     if c == 'L':
         n_dir = (n_dir + 3) % 4
     elif c == 'R':
-        n_dir = (n_dir - 1) % 4
+        n_dir = (n_dir + 1) % 4
     else: # c == 'F'
         x, y = x + dxs[n_dir], y + dys[n_dir]
     
