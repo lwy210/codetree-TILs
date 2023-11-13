@@ -18,7 +18,7 @@ for i in range(1, n*m):
         n_dir = (n_dir + 1) % 4
     
     x, y = x + dx[n_dir], y + dy[n_dir]
-    arr[x][y] = chr(ord('A')+i)
+    arr[x][y] = chr((ord('A')+(i%65)))
 
 for i in range(n):
     for j in range(m):
