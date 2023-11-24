@@ -7,7 +7,7 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        int minimum = (a > b ? b : a) > c ? c : b;
+        int minimum = a > (b > c ? c : b) ? (b > c ? c : b) : a;
 
         if (a == minimum) {
             System.out.print(1);
